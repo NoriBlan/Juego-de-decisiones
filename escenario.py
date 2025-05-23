@@ -19,18 +19,7 @@ class Escenario:
             time.sleep(1)
             print(self.npc.introduccion)
             time.sleep(2)
-            # Este bucle while True ya no es relevante con la GUI
-            # while True:
-            #     decision_npc = input(f"\n¿Quieres hablar con {self.npc.nombre}? (sí/no): ").strip().lower()
-            #     if decision_npc == "sí":
-            #         self.npc.interactuar(jugador)
-            #         break
-            #     elif decision_npc == "no":
-            #         print(f"\nIgnoras a {self.npc.nombre} y sigues tu camino.\n")
-            #         time.sleep(1)
-            #         break
-            #     else:
-            #         print("Por favor, responde con 'sí' o 'no'.")
+          
 
         print("\n🔎 Opciones disponibles:")
         for clave, valor in self.opciones.items():
@@ -44,8 +33,6 @@ class Escenario:
             if decision in self.opciones:
                 return self.opciones[decision]
             else:
-                # Este print ya no es relevante con la GUI, ya que la GUI maneja el error
-                # print("❌ Opción inválida.")
                 return None
         else:
             # Modo consola: forzar decisión válida (no usado por la GUI)
