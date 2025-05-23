@@ -12,13 +12,11 @@ class Enemigo:
         Reduce la salud del enemigo al recibir daño.
         """
         self.salud -= cantidad
-        # print(f"El {self.nombre} ha recibido {cantidad} de daño. Salud restante: {self.salud}")
 
     def atacar(self, objetivo):
         """
         El enemigo ataca a un objetivo (personaje).
         """
-        # print(f"El {self.nombre} ataca a {objetivo.nombre}!")
         objetivo.recibir_danio(self.fuerza)
 
     def esta_derrotado(self):
