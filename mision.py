@@ -17,7 +17,4 @@ class Mision:
         Marca la misión como completada.
         """
         self.completada = True
-        # Puedes mantener este print si también usas la consola para depuración,
-        # de lo contrario, la interfaz gráfica manejará el mensaje de completado.
-        # print(f"🎉 ¡Misión '{self.titulo}' completada!")
-        pass # La GUI se encargará de mostrar el mensaje de completado
+        pass
